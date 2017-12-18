@@ -21,7 +21,7 @@ public:
 			FORMAT_MESSAGE_FROM_SYSTEM | FORMAT_MESSAGE_ALLOCATE_BUFFER | FORMAT_MESSAGE_IGNORE_INSERTS,
 			nullptr, error_code, 0, reinterpret_cast<LPSTR>(&pszMessage), 0, nullptr);
 
-		if (result != 0)
+		if (result == 0)
 		{
 			std::ostringstream buf;
 			buf << "Unknown Error" << hex(error_code) << std::endl;
