@@ -1,6 +1,7 @@
 #pragma once
 
 #include "stdafx.h"
+#include "hex_manip.h"
 
 class windows_error : public std::runtime_error
 {
@@ -23,8 +24,7 @@ public:
 		if (result == 0)
 		{
 			std::ostringstream buf;
-
-			buf << "Unknown Error (0x" << std::uppercase << std::setfill('0') << std::setw(8) << std::hex << error_code << ")" << std::endl;
+			buf << "Unknown Error" << hex(error_code) << std::endl;
 
 			return buf.str();
 		}
