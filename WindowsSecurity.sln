@@ -5,6 +5,15 @@ VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ViewSecurityDescriptor", "ViewSecurityDescriptor\ViewSecurityDescriptor.vcxproj", "{E260E7D3-B491-4349-81C8-09A4684861A9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AddFullAccessAce", "AddFullAccessAce\AddFullAccessAce.vcxproj", "{6233DF0C-9034-4969-AA3F-8ECB44C90DB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{9EE0935A-D1AA-4441-A0DE-B4093C341E40}"
+	ProjectSection(SolutionItems) = preProject
+		Common\hex_manip.h = Common\hex_manip.h
+		Common\local_ptr.h = Common\local_ptr.h
+		Common\windows_error.h = Common\windows_error.h
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +30,14 @@ Global
 		{E260E7D3-B491-4349-81C8-09A4684861A9}.Release|x64.Build.0 = Release|x64
 		{E260E7D3-B491-4349-81C8-09A4684861A9}.Release|x86.ActiveCfg = Release|Win32
 		{E260E7D3-B491-4349-81C8-09A4684861A9}.Release|x86.Build.0 = Release|Win32
+		{6233DF0C-9034-4969-AA3F-8ECB44C90DB6}.Debug|x64.ActiveCfg = Debug|x64
+		{6233DF0C-9034-4969-AA3F-8ECB44C90DB6}.Debug|x64.Build.0 = Debug|x64
+		{6233DF0C-9034-4969-AA3F-8ECB44C90DB6}.Debug|x86.ActiveCfg = Debug|Win32
+		{6233DF0C-9034-4969-AA3F-8ECB44C90DB6}.Debug|x86.Build.0 = Debug|Win32
+		{6233DF0C-9034-4969-AA3F-8ECB44C90DB6}.Release|x64.ActiveCfg = Release|x64
+		{6233DF0C-9034-4969-AA3F-8ECB44C90DB6}.Release|x64.Build.0 = Release|x64
+		{6233DF0C-9034-4969-AA3F-8ECB44C90DB6}.Release|x86.ActiveCfg = Release|Win32
+		{6233DF0C-9034-4969-AA3F-8ECB44C90DB6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
